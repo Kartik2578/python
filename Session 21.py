@@ -42,8 +42,8 @@ class Customer:
         elif mode == 2:
             self.id = int(input("Enter Customer ID: "))
             sql = "select * from Customer where id = {}".format(self.id)
-            rows = db.executeReadOperation(sql)
-            print(rows[0])
+
+
             self.name = input("Enter Customer Name: ")
             self.phone = input("Enter Customer Phone: ")
             self.email = input("Enter Customers Email: ")
